@@ -54,7 +54,7 @@ ReactDOM.render(<App/>, document.getElementById('root'));
 
 之所以要区分`fiberRootNode`与`rootFiber`，是因为在应用中我们可以多次调用`ReactDOM.render`渲染不同的组件树，他们会拥有不同的`rootFiber`。但是整个应用的根节点只有一个，那就是`fiberRootNode`。
 
-`fiberRootNode`的`current`会指向当前页面上已渲染内容对应对`Fiber树`，被称为`current Fiber树`。
+`fiberRootNode`的`current`会指向当前页面上已渲染内容对应的`Fiber树`，被称为`current Fiber树`。
 
 <img :src="$withBase('/img/rootfiber.png')" alt="rootFiber">
 
